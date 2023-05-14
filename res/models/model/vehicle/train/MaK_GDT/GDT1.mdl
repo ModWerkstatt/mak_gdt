@@ -1,0 +1,2290 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 13.176, 1.45723, 4.17571, },
+		bbMin = { -13.176, -1.45723, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 32.244251251221, 1.5048484802246, 2.106575012207, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						_meshId = 1,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						mesh = "vehicle/train/MaK_GDT/rumpf_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+						_meshId = 2,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						mesh = "vehicle/train/MaK_GDT/rinne_lod0.msh",
+						name = "rinne",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+                        children = {
+					        {
+						        _meshId = 4,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/bogie_lod0.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+						        _meshId = 5,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+						        _meshId = 6,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie1",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5, 0, 0, 1, },
+                    },
+                    {
+                        children = {
+					        {
+						        _meshId = 8,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/bogie_lod0.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+						        _meshId = 9,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+						        _meshId = 10,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie2",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5, 0, 0, 1, },
+                    },
+					{
+						_meshId = 11,
+                        materials = { "vehicle/train/MaK_GDT/innen.mtl", },
+						mesh = "vehicle/train/MaK_GDT/innen_lod0.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 12,
+                        materials = { "vehicle/train/MaK_GDT/glas.mtl", },
+						mesh = "vehicle/train/MaK_GDT/glas_lod0.msh",
+						name = "glas",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_left = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+                        children = {
+		                    {
+                                animations = {
+		                            open_all_doors = {
+			                            params = {
+				                            id = "vehicle/train/MaK_GDT/tritt_2.ani",
+			                            },
+			                            type = "FILE_REF",
+		                            },
+		                            close_all_doors = {
+                                        forward = false,
+			                            params = {
+				                            id = "vehicle/train/MaK_GDT/tritt_2.ani",
+			                            },
+			                            type = "FILE_REF",
+		                            },
+		                            open_doors_left = {
+			                            params = {
+				                            id = "vehicle/train/MaK_GDT/tritt_2.ani",
+			                            },
+			                            type = "FILE_REF",
+		                            },
+		                            close_doors_left = {
+			                            forward = false,
+			                            params = {
+				                            id = "vehicle/train/MaK_GDT/tritt_2.ani",
+			                            },
+			                            type = "FILE_REF",
+		                            },
+	                            },
+	                            _meshId = 13,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+			                    mesh = "vehicle/train/MaK_GDT/tritt_1l_lod0.msh",
+			                    name = "tritt_innen_2l",
+			                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.37352859973907, -0.044891357421875, 0.082373730838299, 1, },
+		                    },
+	                    },
+	                    _meshId = 14,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_1l_lod0.msh",
+	                    name = "tuer_2l",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.52961, 1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_left = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+                        children = {
+		                    {
+                                animations = {
+				                    open_all_doors = {
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_2.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_all_doors = {
+                                        forward = false,
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_2.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    open_doors_left = {
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_2.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_doors_left = {
+					                    forward = false,
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_2.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+			                    },
+			                    _meshId = 15,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+			                    mesh = "vehicle/train/MaK_GDT/tritt_2l_lod0.msh",
+			                    name = "tritt_innen_2l",
+			                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.38185971975327, -0.044891510158777, 0.0823734998703, 1, },
+		                    },
+	                    },
+	                    _meshId = 16,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_2l_lod0.msh",
+	                    name = "tuer_2l",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.08322, 1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_right = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+                        children = {
+		                    {
+                                animations = {
+				                    open_all_doors = {
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_all_doors = {
+                                        forward = false,
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    open_doors_left = {
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_doors_left = {
+					                    forward = false,
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+			                    },
+			                    _meshId = 17,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+			                    mesh = "vehicle/train/MaK_GDT/tritt_2r_lod0.msh",
+			                    name = "tritt_innen_3l",
+			                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.38185971975327, 0.044891510158777, 0.0823734998703, 1, },
+		                    },
+	                    },
+	                    _meshId = 18,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_2r_lod0.msh",
+	                    name = "tuer_3l",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.08322, -1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_right = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+                        children = {
+		                    {
+                                animations = {
+				                    open_all_doors = {
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_all_doors = {
+                                        forward = false,
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    open_doors_left = {
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_doors_left = {
+					                    forward = false,
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+			                    },
+			                    _meshId = 19,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+			                    mesh = "vehicle/train/MaK_GDT/tritt_1r_lod0.msh",
+			                    name = "tritt_innen_3l",
+			                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.37352859973907, 0.044891357421875, 0.082373730838299, 1, },
+		                    },
+	                    },
+
+	                    _meshId = 20,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_1r_lod0.msh",
+	                    name = "tuer_4l",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.52961, -1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_left = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+                        children = {
+		                    {
+                                animations = {
+		                            open_all_doors = {
+			                            params = {
+				                            id = "vehicle/train/MaK_GDT/tritt_2.ani",
+			                            },
+			                            type = "FILE_REF",
+		                            },
+		                            close_all_doors = {
+                                        forward = false,
+			                            params = {
+				                            id = "vehicle/train/MaK_GDT/tritt_2.ani",
+			                            },
+			                            type = "FILE_REF",
+		                            },
+		                            open_doors_right = {
+			                            params = {
+				                            id = "vehicle/train/MaK_GDT/tritt_2.ani",
+			                            },
+			                            type = "FILE_REF",
+		                            },
+		                            close_doors_right = {
+			                            forward = false,
+			                            params = {
+				                            id = "vehicle/train/MaK_GDT/tritt_2.ani",
+			                            },
+			                            type = "FILE_REF",
+		                            },
+	                            },
+			                    _meshId = 21,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+			                    mesh = "vehicle/train/MaK_GDT/tritt_2l_lod0.msh",
+			                    name = "tritt_2r",
+			                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.38185971975327, -0.044891510158777, 0.0823734998703, 1, },
+		                    },
+	                    },
+	                    _meshId = 22,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_2l_lod0.msh",
+	                    name = "tuer_1r",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.07905, 1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_left = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+                        children = {
+		                    {
+                                animations = {
+				                    open_all_doors = {
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_2.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_all_doors = {
+                                        forward = false,
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_2.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    open_doors_right = {
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_2.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_doors_right = {
+					                    forward = false,
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_2.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+			                    },
+			                    _meshId = 23,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+			                    mesh = "vehicle/train/MaK_GDT/tritt_1l_lod0.msh",
+			                    name = "tritt_2r",
+			                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.37352859973907, -0.044891357421875, 0.082373730838299, 1, },
+		                    },
+	                    },
+	                    _meshId = 24,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_1l_lod0.msh",
+	                    name = "tuer_2r",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.63265, 1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_right = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+                        children = {
+		                    {
+                                animations = {
+				                    open_all_doors = {
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_all_doors = {
+                                        forward = false,
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    open_doors_right = {
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_doors_right = {
+					                    forward = false,
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+			                    },
+			                    _meshId = 25,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+			                    mesh = "vehicle/train/MaK_GDT/tritt_2r_lod0.msh",
+			                    name = "tritt_3r",
+			                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.38185971975327, 0.044891510158777, 0.0823734998703, 1, },
+		                    },
+	                    },
+	                    _meshId = 26,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_2r_lod0.msh",
+	                    name = "tuer_3r",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.07905, -1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_right = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+                        children = {
+		                    {
+                                animations = {
+				                    open_all_doors = {
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_all_doors = {
+                                        forward = false,
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    open_doors_right = {
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_doors_right = {
+					                    forward = false,
+					                    params = {
+						                    id = "vehicle/train/MaK_GDT/tritt_1.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+			                    },
+			                    _meshId = 27,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+			                    mesh = "vehicle/train/MaK_GDT/tritt_1r_lod0.msh",
+			                    name = "tritt_3r",
+			                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.37352859973907, 0.044891357421875, 0.082373730838299, 1, },
+		                    },
+	                    },
+	                    _meshId = 28,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_1r_lod0.msh",
+	                    name = "tuer_4r",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.63265, -1.4125, 1.20196, 1, },
+                    },
+					{
+						_meshId = 29,
+                        materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/MaK_GDT/licht_weiss_lod0.msh",
+						name = "licht_weiss1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 30,
+                        materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/MaK_GDT/licht_rot_lod0.msh",
+						name = "licht_rot1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 31,
+                        materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/MaK_GDT/licht_weiss_lod0.msh",
+						name = "licht_weiss2",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 32,
+                        materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/MaK_GDT/licht_rot_lod0.msh",
+						name = "licht_rot2",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+        -- LOD 1
+        {
+			node = {
+				children = {
+					{
+						_meshId = 1,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						mesh = "vehicle/train/MaK_GDT/rumpf_lod1.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+                        children = {
+					        {
+						        _meshId = 3,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/bogie_lod1.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+						        _meshId = 4,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+						        _meshId = 5,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie1",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5, 0, 0, 1, },
+                    },
+                    {
+                        children = {
+					        {
+						        _meshId = 7,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/bogie_lod1.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+						        _meshId = 8,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+						        _meshId = 9,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie2",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5, 0, 0, 1, },
+                    },
+					{
+						_meshId = 10,
+                        materials = { "vehicle/train/MaK_GDT/innen.mtl", },
+						mesh = "vehicle/train/MaK_GDT/innen_lod1.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 11,
+                        materials = { "vehicle/train/MaK_GDT/glas.mtl", },
+						mesh = "vehicle/train/MaK_GDT/glas_lod0.msh",
+						name = "glas",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_left = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 12,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_1l_lod1.msh",
+	                    name = "tuer_2l",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.52961, 1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_left = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 13,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_2l_lod1.msh",
+	                    name = "tuer_2l",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.08322, 1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_right = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 14,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_2r_lod1.msh",
+	                    name = "tuer_3l",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.08322, -1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_right = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 15,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_1r_lod1.msh",
+	                    name = "tuer_4l",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.52961, -1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_left = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 16,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_2l_lod1.msh",
+	                    name = "tuer_1r",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.07905, 1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_left = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 17,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_1l_lod1.msh",
+	                    name = "tuer_2r",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.63265, 1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_right = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 18,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_2r_lod1.msh",
+	                    name = "tuer_3r",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.07905, -1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_right = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 19,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_1r_lod1.msh",
+	                    name = "tuer_4r",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.63265, -1.4125, 1.20196, 1, },
+                    },
+					{
+						_meshId = 20,
+                        materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/MaK_GDT/licht_weiss_lod0.msh",
+						name = "licht_weiss1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 21,
+                        materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/MaK_GDT/licht_rot_lod0.msh",
+						name = "licht_rot1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 22,
+                        materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/MaK_GDT/licht_weiss_lod0.msh",
+						name = "licht_weiss2",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 23,
+                        materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/MaK_GDT/licht_rot_lod0.msh",
+						name = "licht_rot2",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 500,
+		},
+        -- LOD 2
+        {
+			node = {
+				children = {
+					{
+						_meshId = 1,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						mesh = "vehicle/train/MaK_GDT/rumpf_lod2.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+                        children = {
+					        {
+						        _meshId = 3,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/bogie_lod2.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+						        _meshId = 4,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+						        _meshId = 5,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie1",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5, 0, 0, 1, },
+                    },
+                    {
+                        children = {
+					        {
+						        _meshId = 7,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/bogie_lod2.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+						        _meshId = 8,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+						        _meshId = 9,
+                                materials = { "vehicle/train/MaK_GDT/rumpf.mtl", },
+						        mesh = "vehicle/train/MaK_GDT/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie2",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5, 0, 0, 1, },
+                    },
+					{
+						_meshId = 10,
+                        materials = { "vehicle/train/MaK_GDT/innen.mtl", },
+						mesh = "vehicle/train/MaK_GDT/innen_lod2.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_left = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 14,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_1l_lod2.msh",
+	                    name = "tuer_2l",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.52961, 1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_left = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 16,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_2l_lod2.msh",
+	                    name = "tuer_2l",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.08322, 1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_right = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 18,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_2r_lod2.msh",
+	                    name = "tuer_3l",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.08322, -1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_right = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 20,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_1r_lod2.msh",
+	                    name = "tuer_4l",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.52961, -1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_left = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 22,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_2l_lod2.msh",
+	                    name = "tuer_1r",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.07905, 1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_left = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 24,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_1l_lod2.msh",
+	                    name = "tuer_2r",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.63265, 1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_right = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_1.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 26,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_2r_lod2.msh",
+	                    name = "tuer_3r",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.07905, -1.4125, 1.20196, 1, },
+                    },
+                    {
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_right = {
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/train/MaK_GDT/tuer_2.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    _meshId = 28,
+                        materials = { "vehicle/train/MaK_GDT/rumpf.mtl", "vehicle/train/MaK_GDT/glas.mtl", },
+	                    mesh = "vehicle/train/MaK_GDT/tuer_1r_lod2.msh",
+	                    name = "tuer_4r",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.63265, -1.4125, 1.20196, 1, },
+                    },
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 500,
+			visibleTo = 1500,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1953,
+			yearTo = 1977,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			name = _("GDT1_name"),
+			description = _("GDT1_desc"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+                {
+					child = 1,
+					color = { 0.27, 0.27, 0.27, },
+					frequency = 50,
+					lifeTime = 2,
+					position = { 6.91976, -1.066, 3.8728, },
+					size01 = { 0.1, 0.3, },
+					velocity = { 0, 0, 4, },
+				},
+                {
+					child = 1,
+					color = { 0.27, 0.27, 0.27, },
+					frequency = 50,
+					lifeTime = 2,
+					position = { -6.39612, -1.066, 3.8728, },
+					size01 = { 0.1, 0.3, },
+					velocity = { 0, 0, 4, },
+				},
+			},
+		},
+		railVehicle = {
+			configs = {
+                {
+					axles = { "vehicle/train/MaK_GDT/rad_lod0.msh", },
+					backBackwardParts = { 32, },
+					backForwardParts = { 30, },
+					frontBackwardParts = { 31, },
+					frontForwardParts = { 29, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+                {
+					axles = { "vehicle/train/MaK_GDT/rad_lod1.msh", },
+					backBackwardParts = { 23, },
+					backForwardParts = { 21, },
+					frontBackwardParts = { 22, },
+					frontForwardParts = { 20, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+                {
+					axles = { "vehicle/train/MaK_GDT/rad_lod2.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+            },
+			engines = {
+                {
+					power = 324.0,
+					tractiveEffort = 150.0,
+					type = "DIESEL",
+				},
+            },
+			soundSet = {
+				name = "train_diesel",
+			},
+			topSpeed = 20.833333333,
+			weight = 36.5,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				--- Tf vorn ---
+				{
+					animation = "driving_upright",
+					crew = true,
+                    forward = false,
+					group = 31,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.05, -0.9, 1.32, 1, },
+				},
+				--- Tf hinten ---
+				{
+					animation = "driving_upright",
+					crew = true,
+                    forward = true,
+					group = 29,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.05, -0.9, 1.32, 1, },
+				},
+				--- Fahrgäste ---
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.7, 1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.7, 0.65, 1.32, 1, },
+				},
+
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 11.05, 1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 11.05, 0.65, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 11.05, -1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 11.05, -0.65, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 11.05, -0.2, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.2, -1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.2, -0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.2, -0.2, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.2, 1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.2, 0.65, 1.32, 1, },
+				},
+
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9.55, 1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9.55, 0.65, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9.55, -1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9.55, -0.65, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9.55, -0.2, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.7, 1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.7, 0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.7, -1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.7, -0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.7, -0.2, 1.32, 1, },
+				},
+
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 8, -1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 8, -0.65, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 8, -0.2, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 8, 1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 8, 0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.15, -1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.15, -0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.15, -0.2, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.15, 1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.15, 0.65, 1.32, 1, },
+				},
+
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.45, -1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.45, -0.65, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.45, -0.2, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.45, 1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.45, 0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.6, -1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.6, -0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.6, -0.2, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.6, 1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.6, 0.65, 1.32, 1, },
+				},
+
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.95, -1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.95, -0.65, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.95, -0.2, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.95, 1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.95, 0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1, -1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1, -0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1, -0.2, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1, 1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1, 0.65, 1.32, 1, },
+				},
+				--- Mitte ---
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.5, -1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.5, -0.65, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.5, -0.2, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.5, 1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.5, 0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.65, -1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.65, -0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.65, -0.2, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.65, 1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.65, 0.65, 1.32, 1, },
+				},
+
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, -0.05, -0, -1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -0.05, -0.65, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -0.05, -0.2, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -0.05, 1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -0.05, 0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.95, -1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.95, -0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.95, -0.2, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.95, 1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.95, 0.65, 1.32, 1, },
+				},
+
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.55, -1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.55, -0.65, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.55, -0.2, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.55, 1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.55, 0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4, -1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4, -0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4, -0.2, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4, 1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4, 0.65, 1.32, 1, },
+				},
+
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.1, -1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.1, -0.65, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.1, -0.2, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.1, 1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.1, 0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.85, -1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.85, -0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.85, -0.2, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.85, 1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.85, 0.65, 1.32, 1, },
+				},
+
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -6.6, -1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -6.6, -0.65, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -6.6, -0.2, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -6.6, 1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -6.6, 0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.5, -1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.5, -0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.5, -0.2, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.5, 1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.5, 0.65, 1.32, 1, },
+				},
+
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -8.2, -1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -8.2, -0.65, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -8.2, -0.2, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -8.2, 1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -8.2, 0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.9, -1.05, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.9, -0.65, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.9, -0.2, 1.32, 1, },
+				},
+                {
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.9, 1.05, 1.32, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.9, 0.65, 1.32, 1, },
+				},
+
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 112,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			loadSpeed = 4,
+			multipleUnitOnly = false,
+			reversible = true,
+            groupFileName = "vehicle/train/MaK_GDT/menu_MaK_GDT.mdl",
+		},
+	},
+	version = 1,
+}
+end
